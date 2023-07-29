@@ -619,6 +619,7 @@ buttons
     line-height: 55px;
     display: inline-block;
     padding: 0 20px 0 0;
+    color: white;
     font-weight: 500; }
   .sb-btn:hover {
     filter: brightness(110%); }
