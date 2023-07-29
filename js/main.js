@@ -15,9 +15,12 @@ $(function() {
 
   var encEmail = "b3hveDEzMXNsQGhvdG1haWwuY29t";
   var decEmail = atob(encEmail);
-  const form = document.getElementById("contact");
-  form.innerHTML = decEmail;
-  form.setAttribute("href", "mailto:".concat(decEmail));
+  const contactEl = document.getElementById("contact");
+  const contactEl2 = document.getElementById("contact-list");
+  contactEl.innerHTML = decEmail;
+  contactEl2.innerHTML = decEmail;
+  contactEl.setAttribute("href", "mailto:".concat(decEmail));
+  contactEl2.setAttribute("href", "mailto:".concat(decEmail));
 
   /***************************
 
