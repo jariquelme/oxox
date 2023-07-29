@@ -12,6 +12,13 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 $(function() {
 
   "use strict";
+
+  var encEmail = "b3hveDEzMXNsQGhvdG1haWwuY29t";
+  var decEmail = atob(encEmail);
+  const form = document.getElementById("contact");
+  form.innerHTML = decEmail;
+  form.setAttribute("href", "mailto:".concat(decEmail));
+
   /***************************
 
   preloader
